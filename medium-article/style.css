@@ -1,0 +1,144 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f1f1;
+}
+
+.banner {
+  background-image: url(./IMG/kimon-maritz-mQiZnKwGXW0-unsplash.jpg) ;
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  display: flex;
+  justify-content: center ;
+  flex-direction: column;
+  align-items:end;
+}
+
+#banner-txt {
+  margin-right: 30px;
+}
+h1,h2,h3 {
+  text-shadow: 0px 0px 30px rgba(60,60,60,.2);
+
+}
+h1 {
+  margin: 0px 0px 20px 0px;
+  font-size: 22px;
+  font-style: normal;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 18px;
+  font-style: italic;
+}
+
+h3 {
+  color: grey;
+  font-weight: 400;
+  font-style: normal;
+  margin:0px;
+  display: inline-block ;
+  border-bottom: 1px solid #f4f1f1;
+  transition-duration: .5s;
+}
+
+h3:hover {
+  border-bottom: 1px solid grey;
+  transition-duration: .5s;
+}
+
+div.first-section {
+  margin-top: 64px;
+}
+#quote {
+  font-style: italic;
+  color: rgb(231, 231, 231);
+  font-weight: 400;
+  background-color: rgb(148, 148, 148);
+  display: inline-block;
+  transition-duration: 0.5s;
+  border: none;
+}
+
+#quote:hover {
+  color: rgb(148, 148, 148);
+  font-weight: 400;
+  background-color:  rgba(231, 231, 231,0.0);
+  display: inline-block;
+  transition-duration: .5s;
+}
+p {
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5em;
+}
+.article {
+
+}
+
+.content-section {
+  margin: 28px 0px;
+}
+
+.footer {
+  background-color: #6a6a6a;
+  color: white;
+  height: 72px;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+ul>li {
+  display: inline-block;
+  margin: 0px 6px;
+}
+
+i {
+  font-size: 1.2em;
+  color: #E0E1E3;
+  transition-duration: .5s
+}
+
+i:hover {
+  font-size: 1.2em;
+  color: white;
+  transition-duration: .5s;
+}
+
+div.last-section {
+  margin-bottom: 64px;
+}
+/* MEDIA QUERIES */
+
+@media(max-width: 767px) {
+  .article {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+  .article {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media(min-width: 992px) {
+  .article {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
